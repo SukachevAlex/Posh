@@ -4,13 +4,53 @@
   /**/
 
 @media only screen and (max-width : 992px)
-  /**/
+  .promo
+    margin-right: 40px
+    margin-left: 40px
+
 
 @media only screen and (max-width : 768px)
   /**/
 
+@media only screen and (max-width : 672px)
+  .navigation
+    left: 30px
+  .hamburger
+    display: inline-block
+  .menu
+    width: 50%
+    position: absolute
+    text-align: right
+    opacity: 0
+    right: 0
+    display: none
+    top: 90px
+    transition: all 0.15s linear
+  .is-visible
+    display: block
+    opacity: 1
+  .menu__item
+    display: block
+  .menu__link
+    display: block
+    padding: 5px
+    margin-right: 20px
+    &:hover
+      color: $main-color
+  .menu__item_active
+    border: none
+
 @media only screen and (max-width : 480px)
-  /**/
+  .header__information, .social
+    float: none
+    text-align: center
+    margin-top: 10px
+    margin-bottom: 10px
+  .promo__title
+    font-size: 50px
+  .button_offset
+    margin: 0px 20px 20px
 
 @media only screen and (max-width : 320px)
-  /**/
+  .promo__title
+    font-size: 45px

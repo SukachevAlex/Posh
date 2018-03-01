@@ -68,8 +68,57 @@ body
   &:hover
     background-color: #fff
     color: $main-color
-    border: 1px solid $main-color
-  
+    border: none
+
+.menu__hamburger
+  margin-right: 15px
+
+.menu
+  cursor: pointer
+
+.hamburger
+  display: none
+  vertical-align: middle
+
+.hamburger__box
+  width: 50px
+  height: 50px
+  position: relative
+  border: 2px solid #fff
+  border-radius: 50%
+
+.hamburger__inner, .hamburger__inner::before, .hamburger__inner::after
+  width: 25px
+  height: 4px
+  background-color: #fff
+  position: absolute
+  border-radius: 4px
+  transition: all 0.15s ease
+
+.hamburger__inner::before, .hamburger__inner::after
+  content: ''
+  display: block
+
+.hamburger__inner
+  top: 22px
+  left: 11px
+
+.hamburger__inner.is-active
+  transform: rotate(45deg)
+
+.hamburger__inner.is-active::before
+  top: 0
+
+.hamburger__inner.is-active::after
+  transform: rotate(90deg)
+  top: 0
+
+.hamburger__inner::before
+  top: -8px
+
+.hamburger__inner::after
+  top: 8px
+
 .navigation
   position: fixed
   z-index: 1
@@ -100,6 +149,7 @@ body
   min-height: 60px
   color: #fff
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
   align-items: center
   font-size: 14px
@@ -109,6 +159,7 @@ body
   float: left
 .social
   float: right
+
 
 .company__telephone
   color: #fff
@@ -193,6 +244,7 @@ body
   font-size: 14px
   font-weight: 500
   margin-bottom: 260px
+  position: relative
 
 .logo
   width: 132px
@@ -207,6 +259,8 @@ body
 
 .menu__link
   padding: 41px 15px 20px
+  &:hover
+    color: $main-color
   &:last-child
     padding-right: 0
 
