@@ -1,0 +1,236 @@
+@import 'fonts'
+@import 'helpers/libs'
+@import 'helpers/vars'
+
+*, *::after, *::before
+  box-sizing: border-box
+
+a
+  outline: none
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+  padding: 0
+  margin: 0
+
+ul,li
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+p, pre
+  margin: 0
+
+input,
+select,
+button
+  outline: none
+
+.clearfix
+  &::after
+    content: ""
+    display: block
+    clear: both
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+  margin: 0
+  padding: 0
+
+.container
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+
+.button
+  width: 180px
+  height: 50px
+  display: inline-block
+  font-weight: 500
+  text-transform: uppercase
+  border: 1px solid white
+  padding: 10px
+  transition: all 0.3s ease
+  &:hover
+    background-color: $main-color
+
+.button_offset
+  margin-right: 30px
+
+.button_yellow
+  background-color: $main-color
+  border: none
+  &:hover
+    background-color: #fff
+    color: $main-color
+    border: 1px solid $main-color
+  
+.navigation
+  position: fixed
+  z-index: 1
+  right: 30px
+  top: 45%
+
+.navigation__item
+  display: block
+  width: 6px
+  height: 6px
+  background-color: #fff
+  margin-bottom: 14px
+
+.navigation__item_active
+  width: 10px
+  height: 10px
+  background-color: $main-color
+  margin-left: -2px
+
+.header
+  background: url(../img/header/header_background.jpg) center no-repeat
+  background-size: cover
+  min-height: 846px
+  position: relative
+
+.top-line
+  width: 100%
+  min-height: 60px
+  color: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+.header__information
+  float: left
+.social
+  float: right
+
+.company__telephone
+  color: #fff
+  margin-right: 30px
+  padding-left: 20px
+  position: relative
+  cursor: pointer
+  opacity: 0.8
+  transition: all 0.25s ease
+  &:hover
+    opacity: 1
+  &::before
+    display: block
+    content: ""
+    width: 12px
+    height: 12px
+    position: absolute
+    left: 0
+    top: 2px
+    background-image: url("../img/svg/phone-receiver.svg")
+    background-repeat: no-repeat
+    background-size: 100%
+
+.company__address
+  color: #fff
+  padding-left: 20px
+  position: relative
+  cursor: pointer
+  opacity: 0.8
+  transition: all 0.25s ease
+  &:hover
+    opacity: 1
+  &::before
+    display: block
+    content: ""
+    width: 12px
+    height: 12px
+    position: absolute
+    left: 0
+    top: 2px
+    background-image: url("../img/svg/placeholder.svg")
+    background-repeat: no-repeat
+    background-size: 100%
+
+.social__item
+  width: 14px
+  height: 14px
+  display: inline-block
+  margin-right: 28px
+  cursor: pointer
+  background-image: url("../img/header/social_sprite.png")
+  background-repeat: no-repeat
+  background-position: 0 0
+  opacity: 0.8
+  transition: all 0.2s ease
+  &:hover
+    opacity: 1
+  &:last-child
+    margin-right: 0
+
+
+.social__item_twitter
+  background-position: 0 0
+.social__item_facebook
+  background-position: -38px 0
+.social__item_youtube
+  background-position: -77px 0
+.social__item_instagram
+  background-position: -119px 0
+.social__item_flickr
+  background-position: -158px  0
+
+.second-line
+  width: 100%
+  min-height: 78px
+  color: #fff
+  text-transform: uppercase
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-end
+  font-size: 14px
+  font-weight: 500
+  margin-bottom: 260px
+
+.logo
+  width: 132px
+  height: 48px
+  background: url("../img/header/logo.png") 0 0 no-repeat
+
+.header__menu
+  margin-bottom: 15px
+
+.menu__item
+  display: inline-block
+
+.menu__link
+  padding: 41px 15px 20px
+  &:last-child
+    padding-right: 0
+
+.menu__item_active
+  border-top: 2px solid $main-color
+
+.menu__link
+  color: #fff
+
+.promo
+  color: #fff
+  text-align: center
+
+.promo__title
+  font-weight: 500
+  font-size: 66px
+  display: block
+  line-height: 1.3
+
+.text_yellow
+  display: inline
+  color: $main-color
+
+.promo__text
+  margin-bottom: 35px
+
+@import "helpers/media"
