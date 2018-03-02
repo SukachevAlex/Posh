@@ -53,9 +53,9 @@ html
                             li.menu__item
                                 a.menu__link.menu__item_active(href="#") Home
                             li.menu__item
-                                a.menu__link(href="#") Service
+                                a.menu__link(href="#section-service") Service
                             li.menu__item
-                                a.menu__link(href="#") Gallery
+                                a.menu__link(href="#section-gallery") Gallery
                             li.menu__item
                                 a.menu__link(href="#") Channel
                             li.menu__item
@@ -83,7 +83,7 @@ html
 
 
         main.page
-            section.section.section-services
+            section.section.section-services#section-service
                 div.container
                     h2.section__title Our Services
                     p.section__sub-title Vastly improved treatments and increased social acceptance has lead to cosmetic
@@ -129,12 +129,29 @@ html
                                 h3.fragment__title Choose The Right Primer For Your Skin
                                 p.fragment__description Lipstick/Lip Gloss-There are products on the market made specifically to prevent feathering, and a secret trick of mine that I always use if I don’t have my Lip Glossing/No Feather Pencil on me is to dab foundation on your fingertip and smooth it over your lip line. This smooths out any lines around the mouth and provides an even surface for lip color to adhere…and stick to.
                                 a.fragment__link(href="#") Learn More #[span.fragment__arrow &rarr;]
-
-
-
-
-            section.section.section-gallery
+            section.section.section-gallery#section-gallery
                 div.container
+                    div.gallery-slider
+                        div.gallery-slider__prev.gallery-slider__control &larr;
+                        div.gallery-slider__next.gallery-slider__control &rarr;
+                        div.gallery-slider-js
+                            div.gallery-slider__item
+                                div.gallery-slider__date Sep 24
+                                div.gallery-slider__info Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their breast size...
+                            div.gallery-slider__item
+                                div.gallery-slider__date Jul 06
+                                div.gallery-slider__info Real teas come from the tea plant Camellia Sinensis, whilst herbal teas are in truth infusions or tisanes made from herbs, namely dried or fresh leaves, flowers, grasses, barks, roots, seeds or fruits.
+                            div.gallery-slider__item
+                                div.gallery-slider__date Feb 06
+                                div.gallery-slider__info However, be aware that guarana tea and yerba mate tea do contain caffeine. In fact, yerba mate has almost as much caffeine as coffee!
+                            div.gallery-slider__item
+                                div.gallery-slider__date Apr 11
+                                div.gallery-slider__info Are you a fan of fruity tea? If you are, you must be careful because most of the times these blends or flavored teas are nothing more than fruit flavor mixed with real tea leaves, which do contain caffeine.
+                            div.gallery-slider__item
+                                div.gallery-slider__date Sep 01
+                                div.gallery-slider__info Despite the innumerous health benefits they offer you, some herbal teas do have side effects that may lead, for example, to allergic reactions, namely shortness of breath, chest pain, hives or swelling.
+
+
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")

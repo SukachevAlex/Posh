@@ -15,6 +15,17 @@ $( document ).ready(function() {
     });
 
 
+    $(".gallery-slider-js").slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '.gallery-slider__prev',
+        nextArrow: '.gallery-slider__next'
+    });
+
+
 });
 
 var nav = $('.navigation');

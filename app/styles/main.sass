@@ -412,4 +412,64 @@ body
 .fragment__arrow
   font-size: 25px
 
+.section-gallery
+  min-height: 800px
+  background: url("../img/section_gallery/background.jpg") 0 0 no-repeat
+  background-size: cover
+
+.gallery-slider
+  margin: 490px auto 0
+  position: relative
+
+.gallery-slider__item
+  max-width: 970px
+  margin: 0 100px
+  padding: 30px 0
+  background-color: #fff
+  display: flex !important
+  flex-wrap: wrap
+  justify-content: center
+
+.gallery-slider__date
+  text-align: center
+  width: 15%
+  font-size: 32px
+  font-weight: 500
+  font-family: $title-font
+  position: relative
+  border-right: 2px solid $main-color-dark
+  margin-right: 30px
+  &::before
+    content: ""
+    display: block
+    width: 24px
+    height: 24px
+    position: absolute
+    top: 55px
+    left: 40%
+    background: url("../img/svg/yellow_heart.svg") 0 0 no-repeat
+    background-size: 100%
+
+.gallery-slider__info
+  width: 65%
+  font-weight: 400
+  line-height: 26px
+
+.gallery-slider__control
+  font-size: 30px
+  color: #fff
+  position: absolute
+  top: 35px
+  z-index: 1
+  cursor: pointer
+  &.slick-disabled
+    opacity: 0.7
+
+.gallery-slider__prev
+  left: 30px
+
+.gallery-slider__next
+  right: 30px
+
+
 @import "helpers/media"
