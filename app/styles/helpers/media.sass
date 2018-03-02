@@ -1,13 +1,36 @@
 @import "vars"
 
 @media only screen and (max-width : 1200px)
-  /**/
+  .fragment
+    justify-content: center
+  .fragment__info, .fragment__image
+    width: 95%
+  .tabs__item
+    margin-right: 10px
+  .tabs__link
+    width: 140px
+    height: 140px
+    padding-top: 90px
+    &:before
+      top: 35px
 
 @media only screen and (max-width : 992px)
+  .section
+    padding-top: 70px
+  .tabs
+    margin-top: 40px
   .promo
     margin-right: 40px
     margin-left: 40px
-
+  .tabs__item
+    margin-right: 0
+  .tabs__link
+    width: 120px
+    height: 120px
+    padding-top: 70px
+    &:before
+      top: 20px
+      left: 35%
 
 @media only screen and (max-width : 768px)
   /**/
@@ -41,6 +64,8 @@
     border: none
 
 @media only screen and (max-width : 480px)
+  .tabs__list
+    margin: 0 70px 20px
   .header__information, .social
     float: none
     text-align: center

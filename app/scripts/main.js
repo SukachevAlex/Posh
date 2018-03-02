@@ -5,7 +5,7 @@ $( document ).ready(function() {
     });
 
     $('.tabs__link').click(function () {
-       var tab_id = $(this).attr('href');
+       var tab_id = $(this).attr('data-tab');
 
        $('.tabs__link').removeClass('tab_active');
        $('.fragment').removeClass('fragment_active');

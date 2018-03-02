@@ -90,15 +90,15 @@ html
                     div.tabs#tabs
                         ul.tabs__list
                             li.tabs__item
-                                a.tabs__link.tabs__link_about#tab_about(href="#fragment_about") About
+                                span.tabs__link.tabs__link_about#tab_about(data-tab="#fragment_about") About
                             li.tabs__item
-                                a.tabs__link.tabs__link_wedding.tab_active#tab_wedding(href="#fragment_wedding") Wedding
+                                span.tabs__link.tabs__link_wedding.tab_active#tab_wedding(data-tab="#fragment_wedding") Wedding
                             li.tabs__item
-                                a.tabs__link.tabs__link_party#tab_party(href="#fragment_party") Party
+                                span.tabs__link.tabs__link_party#tab_party(data-tab="#fragment_party") Party
                             li.tabs__item
-                                a.tabs__link.tabs__link_beauty-box#tab_beauty-box(href="#fragment_beauty-box") Beauty Box
+                                span.tabs__link.tabs__link_beauty-box#tab_beauty-box(data-tab="#fragment_beauty-box") Beauty Box
                             li.tabs__item
-                                a.tabs__link.tabs__link_course#tab_course(href="#fragment_course") Course
+                                span.tabs__link.tabs__link_course#tab_course(data-tab="#fragment_course") Course
                         div.fragment#fragment_about
                             img.fragment__image(src="../img/section_services/about_photo.jpg" alt="About photo")
                             div.fragment__info
@@ -132,6 +132,9 @@ html
 
 
 
+
+            section.section.section-gallery
+                div.container
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")
