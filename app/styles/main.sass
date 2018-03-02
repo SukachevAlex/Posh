@@ -41,6 +41,7 @@ body
   overflow-x: hidden
   margin: 0
   padding: 0
+  color: $main-color-dark
 
 .container
   width: 100%
@@ -131,6 +132,12 @@ body
   height: 6px
   background-color: #fff
   margin-bottom: 14px
+
+.navigation_dark
+  .navigation__item
+    background-color: $main-color
+  .navigation__item_active
+    background-color: #c7923d
 
 .navigation__item_active
   width: 10px
@@ -286,5 +293,120 @@ body
 
 .promo__text
   margin-bottom: 35px
+
+.section
+  padding-top: 110px
+
+.section-services
+  background: url("../img/section_services/background_layer.png") 0 -245px no-repeat
+  background-size: cover
+
+.section__title
+  font-size: 48px
+  font-family: $title-font
+  text-align: center
+  line-height: 1.4
+
+.section__sub-title
+  text-align: center
+
+.tabs
+  margin-top: 70px
+  margin-bottom: 110px
+
+.tabs__item
+  display: inline-block
+  margin-right: 29px
+  &:last-child
+    margin-right: 0
+
+.tabs__list
+  margin: 0 70px 60px
+
+.tabs__link
+  display: block
+  width: 180px
+  height: 172px
+  vertical-align: middle
+  padding-top: 120px
+  text-align: center
+  color: $main-color-dark
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 500
+  position: relative
+  &::before
+    content: ""
+    display: block
+    width: 40px
+    height: 40px
+    position: absolute
+    top: 50px
+    left: 40%
+
+
+.tabs__link_about
+  &::before
+    background: url("../img/svg/document.svg") 0 0 no-repeat
+    background-size: 100%
+.tabs__link_wedding
+  &::before
+    background: url("../img/svg/heart.svg") 0 0 no-repeat
+    background-size: 100%
+.tabs__link_party
+  &::before
+    background: url("../img/svg/cake.svg") 0 0 no-repeat
+    background-size: 100%
+.tabs__link_beauty-box
+  &::before
+    background: url("../img/svg/shopping-bag.svg") 0 0 no-repeat
+    background-size: 100%
+.tabs__link_course
+  &::before
+    background: url("../img/svg/notebook.svg") 0 0 no-repeat
+    background-size: 100%
+
+.tab_active
+  background-color: #fff !important
+
+.fragment
+  flex-wrap: wrap
+  justify-content: space-between
+  display: none
+
+.fragment_active
+  display: flex
+
+.fragment__image
+  box-shadow: 10px 10px 0px 0px $main-color
+  max-width: 680px
+  margin-bottom: 40px
+
+.fragment__info
+  max-width: 470px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.fragment__title
+  font-family: $title-font
+  font-size: 24px
+  font-weight: 500
+  line-height: 36px
+  margin-bottom: 10px
+
+.fragment__description
+  font-weight: 400
+  line-height: 26px
+  margin-bottom: 10px
+
+.fragment__link
+  color: $main-color
+  font-size: 18px
+  font-weight: 500
+  text-transform: uppercase
+
+.fragment__arrow
+  font-size: 25px
 
 @import "helpers/media"
