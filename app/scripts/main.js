@@ -27,6 +27,18 @@ $( document ).ready(function() {
     });
 
 
+    var filter_btn = $('.filter__btn').click(function() {
+        var article = $('.article');
+        if (this.id === 'article_all') {
+            article.fadeIn(450);
+        } else {
+            var $el = $('.' + this.id).fadeIn(450);
+            article.not($el).hide();
+        }
+        filter_btn.removeClass('filter__btn_active');
+        $(this).addClass('filter__btn_active');
+    })
+
 });
 
 var nav = $('.navigation');
