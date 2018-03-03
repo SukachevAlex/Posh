@@ -52,7 +52,10 @@
     margin: 450px auto 0
 
 @media only screen and (max-width : 768px)
- /**/
+  .article__wrapper
+    grid-template-columns: repeat(1, 370px)
+  .article_wide
+    grid-column: 1/2
 
 @media only screen and (max-width : 672px)
   .navigation
@@ -88,6 +91,7 @@
   .gallery-slider
     margin: 360px auto 0
 
+
 @media only screen and (max-width : 480px)
   .tabs__list
     margin: 0 70px 20px
@@ -105,6 +109,8 @@
   .channel__video
     width: 70%
     height: 250px
+  .article__wrapper
+    grid-template-columns: repeat(auto-fill, 310px)
 
 
 @media only screen and (max-width : 320px)

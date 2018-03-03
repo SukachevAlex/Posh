@@ -528,14 +528,19 @@ body
   display: grid
   justify-content: center
   grid-gap: 30px
-  grid-template-columns: repeat(auto-fill, 370px)
+  grid-template-columns: repeat(auto-fill, 360px)
   flex-wrap: wrap
+
+.article
+  overflow-x: hidden
 
 .article_wide
   grid-column: 1/3
 
 .article__image
   transition: all 0.2s ease
+  box-shadow: none
+  background-size: cover
   &:hover
     box-shadow: 10px 10px 0px 0px $main-color
 
