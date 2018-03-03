@@ -13,6 +13,9 @@
     padding-top: 90px
     &:before
       top: 35px
+  .gallery-slider__item
+    width: 75% !important
+
 
 @media only screen and (max-width : 992px)
   .section
@@ -31,9 +34,23 @@
     &:before
       top: 20px
       left: 35%
+  .gallery-slider__item
+    flex-direction: column
+  .gallery-slider__date
+    width: 27%
+    border-right: none
+    margin-right: 0
+    margin-bottom: 20px
+    padding-bottom: 0
+    padding-left: 30px
+    &::before
+      top: 25%
+      left: 0
+  .gallery-slider__info
+    width: 90%
 
 @media only screen and (max-width : 768px)
-  /**/
+ /**/
 
 @media only screen and (max-width : 672px)
   .navigation
@@ -62,6 +79,10 @@
       color: $main-color
   .menu__item_active
     border: none
+  .gallery-slider__date
+    width: 55% !important
+  .gallery-slider__item
+    width: 65% !important
 
 @media only screen and (max-width : 480px)
   .tabs__list
@@ -75,6 +96,7 @@
     font-size: 50px
   .button_offset
     margin: 0px 20px 20px
+
 
 @media only screen and (max-width : 320px)
   .promo__title

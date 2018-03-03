@@ -22,7 +22,8 @@ $( document ).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: '.gallery-slider__prev',
-        nextArrow: '.gallery-slider__next'
+        nextArrow: '.gallery-slider__next',
+        adaptiveHeight: true
     });
 
 
