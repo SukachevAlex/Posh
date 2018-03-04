@@ -133,31 +133,6 @@ body
 .hamburger__inner::after
   top: 8px
 
-.navigation
-  position: fixed
-  z-index: 1
-  right: 30px
-  top: 45%
-
-.navigation__item
-  display: block
-  width: 6px
-  height: 6px
-  background-color: #fff
-  margin-bottom: 14px
-
-.navigation_dark
-  .navigation__item
-    background-color: $main-color
-  .navigation__item_active
-    background-color: #c7923d
-
-.navigation__item_active
-  width: 10px
-  height: 10px
-  background-color: $main-color
-  margin-left: -2px
-
 .header
   background: url(../img/header/header_background.jpg) center no-repeat
   background-size: cover
@@ -166,6 +141,7 @@ body
 
 .top-line
   width: 100%
+  padding: 0 10px
   min-height: 60px
   color: #fff
   display: flex
@@ -254,6 +230,7 @@ body
 
 .second-line
   width: 100%
+  padding: 0 10px
   min-height: 78px
   color: #fff
   text-transform: uppercase
@@ -507,7 +484,7 @@ body
   margin-bottom: 65px
 
 .filter
-  margin: 15px auto 65px
+  margin: 15px 10px 65px
   text-align: center
 
 .filter__btn
@@ -618,6 +595,7 @@ body
 .social-list
   text-align: center
   margin: 0 10px
+  position: relative
 
 .social__link
   display: inline-block
@@ -635,5 +613,15 @@ body
 .social__link_underline
   text-decoration: underline
 
+.arrow-top__link
+  display: inline-block
+  position: absolute
+  right: 0
+  top: 0
+  color: #fff
+  font-size: 14px
+  font-weight: 400
+  line-height: 42px
+  margin-right: 20px
 
 @import "helpers/media"

@@ -37,17 +37,13 @@ $( document ).ready(function() {
         }
         filter_btn.removeClass('filter__btn_active');
         $(this).addClass('filter__btn_active');
-    })
+    });
 
-});
-
-var nav = $('.navigation');
-
-$(window).scroll(function()
-{
-    if (nav.offset().top + nav.height() > $('.header').height())
-        nav.addClass('navigation_dark');
-    else
-        nav.removeClass('navigation_dark');
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
 
 });
