@@ -554,5 +554,56 @@ body
   font-family: $title-font
   font-weight: 300
 
+.section-contact
+  padding-bottom: 120px
+
+.contant__list
+  margin: 65px auto 0
+  text-align: center
+
+.contact__item
+  display: inline-block
+  margin: 0 35px 40px
+  padding-left: 70px
+  position: relative
+  text-align: left
+  &::before
+    content: ""
+    display: block
+    width: 61px
+    height: 61px
+    position: absolute
+    top: 0
+    left: 0
+  &:hover
+    transition: all 0.3s ease
+    transform: scale(1.05)
+
+.contact__item_address
+  &::before
+    background: url("../img/svg/address.svg") 0 0 no-repeat
+    background-size: 100%
+.contact__item_phone
+  &::before
+    background: url("../img/svg/smartphone.svg") 0 0 no-repeat
+    background-size: 100%
+.contact__item_email
+  &::before
+    background: url("../img/svg/mail.svg") 0 0 no-repeat
+    background-size: 100%
+
+
+.contact__title
+  display: block
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+
+.contact__info
+  font-family: $title-font
+  font-size: 24px
+  font-weight: 300
+
+
 
 @import "helpers/media"
