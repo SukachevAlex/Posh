@@ -49,5 +49,5 @@ $( document ).ready(function() {
 });
 
 $(window).on('load', function() {
-    $('.preloader__wrapper').delay(1000).fadeOut('slow');
+    $('.preloader__wrapper').delay(500).fadeOut('slow');
 });
