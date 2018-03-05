@@ -13,7 +13,7 @@ module.exports = function () {
 
     $.gulp.task('libs:build', function(){
         return $.gulp.src([
-            '',
+            'node_modules/slick-carousel/slick/slick.js'
         ])
             .pipe($.gp.concat('libs.min.js'))
             .pipe($.gp.uglifyjs())
